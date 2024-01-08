@@ -1,0 +1,39 @@
+.header {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: transparent;
+  width: 1110px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  &-title {
+    height: auto;
+    color: $white;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.444px;
+  }
+  &-socials {
+    display: flex;
+    flex-direction: row;
+    &-link {
+      margin-right: 30px;
+      list-style: none;
+    }
+  }
+  &-theme {
+    &-toggle {
+      background: transparent;
+      border: 0;
+      height: auto;
+      width: auto;
+      padding: 0;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.theme {
+  transition-duration: 1000ms;
+  transition-timing-function: ease;
+  &.dark {
+    background-color: $black;
+  }
+  &.white {
+    background-color: $white;
+  }
+}

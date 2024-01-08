@@ -1,0 +1,15 @@
+.wellcome {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.theme {
+  &.dark {
+    .wellcome {
+      &-image {
+        filter: grayscale(1);
+      }
+    }
+  }
+}
