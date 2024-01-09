@@ -1,0 +1,12 @@
+.floating-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.theme {
+  &.light {
+    .floating-img {
+      filter: invert(1);
+    }
+  }
+}

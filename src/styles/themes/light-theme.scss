@@ -1,0 +1,11 @@
+.theme {
+  transition-duration: 1000ms;
+  transition-timing-function: ease;
+  &.light {
+    background-color: $white;
+    //Light Variables
+    --text-color: #000;
+    --purple-underline: #6c1bf0;
+    --component-spliter: #000;
+  }
+}

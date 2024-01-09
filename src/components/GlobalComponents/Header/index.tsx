@@ -4,8 +4,8 @@ import classNames from "classnames";
 import Link from "next/link";
 import Image from "next/image";
 
-import gitHubIcon from "../../../assets/svgs/github.svg";
-import linkedinIcon from "../../../assets/svgs/linkedin.svg";
+import gitHubIcon from "@/assets/svgs/github.svg";
+import linkedinIcon from "@/assets/svgs/linkedin.svg";
 import ThemeSelector from "./ThemeSelector";
 
 const Header = () => {

@@ -1,0 +1,41 @@
+.skills {
+  width: 100%;
+  border-top: 1px solid var(--component-spliter);
+  margin-bottom: $section-margin;
+
+  padding-top: $text-padding;
+  &-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    &-card {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      &-title {
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 56px;
+        letter-spacing: -1.5px;
+        color: var(--text-color);
+
+        margin: 0;
+        margin-bottom: $card-text-margin;
+      }
+      &-subtitle {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        color: var(--text-color);
+
+        margin: 0;
+      }
+    }
+  }
+}

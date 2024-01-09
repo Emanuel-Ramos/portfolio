@@ -1,7 +1,8 @@
 import Footer from "@/components/GlobalComponents/Footer";
 import Header from "@/components/GlobalComponents/Header";
-import "../styles/themes/dark-theme.scss";
-import "../styles/global.scss";
+import "@/styles/themes/dark-theme.scss";
+import "@/styles/themes/light-theme.scss";
+import "@/styles/global.scss";
 
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
