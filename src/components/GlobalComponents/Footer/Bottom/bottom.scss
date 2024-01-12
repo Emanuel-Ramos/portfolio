@@ -1,0 +1,21 @@
+.bottom {
+  border-top: 1px solid var(--component-spliter);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &-title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.444px;
+
+    color: var(--text-color);
+
+    margin: 0;
+    padding: $text-padding 0;
+  }
+}

@@ -31,12 +31,12 @@ const Wellcome = () => {
           <h1 className={classNames("wellcome-text-title")}>
             Nice to meet you! I’m <span>Emanuel Ramos</span>
           </h1>
-          <h2 className={classNames("wellcome-text-subtitle")}>
+          <p className={classNames("wellcome-text-subtitle")}>
             With extensive programming experience since age 9, I've cultivated a
             fervent passion for machine learning. Committed to continuous
             learning, I aspire to leverage my competencies in this field to
             eventually build my career.
-          </h2>
+          </p>
           <ContactMe />
         </div>
         <div className={classNames("wellcome-image")}>

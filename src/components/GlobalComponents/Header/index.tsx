@@ -1,17 +1,21 @@
+"use client";
 import React from "react";
 import "./header.scss";
 import classNames from "classnames";
 import Link from "next/link";
+
 import Image from "next/image";
 
 import gitHubIcon from "@/assets/svgs/github.svg";
 import linkedinIcon from "@/assets/svgs/linkedin.svg";
 import ThemeSelector from "./ThemeSelector";
+import useScrollDirection from "@/hooks/useScrollDirection";
 
 const Header = () => {
+  const scrollDirection = useScrollDirection();
   return (
-    <header className={classNames("container", "header")}>
-      <h1 className={classNames("header-title")}>emanuelramos</h1>
+    <header className={classNames("container", "header", scrollDirection)}>
+      <h2 className={classNames("header-title")}>emanuelramos</h2>
       <div>
         <ul className={classNames("header-socials")}>
           <li className={classNames("header-socials-link")}>

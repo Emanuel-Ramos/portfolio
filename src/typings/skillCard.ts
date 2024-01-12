@@ -1,8 +1,8 @@
 interface skillCardProps {
-  card: ICard[];
+  card: ISkillCard[];
 }
 
-interface ICard {
+interface ISkillCard {
   title: string;
   subtitle: string;
 }

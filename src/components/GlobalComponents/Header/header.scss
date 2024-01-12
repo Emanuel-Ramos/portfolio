@@ -9,6 +9,14 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+  transition: all 0.2s ease-in-out;
+
+  &.down {
+    top: 0;
+  }
+  &.up {
+    top: -100%;
+  }
   &-title {
     height: auto;
     color: var(--text-color);

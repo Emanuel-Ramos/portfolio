@@ -7,5 +7,21 @@
     --text-color: #fff;
     --purple-underline: #6c1bf0;
     --component-spliter: #fff;
+    --footer-background: #242424;
+
+    &::-webkit-scrollbar-thumb {
+      height: 6px;
+      background-color: #6c1bf0;
+      border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
   }
 }
