@@ -1,9 +1,9 @@
 import ProjectDefault from "@/assets/imgs/default-project.jpg";
 
 export const skillsCardsMock = [
-  { title: "Front-End", subTitle: "50+ Hours Experience" },
-  { title: "Machine Learning", subTitle: "50+ Hours Experience" },
-  { title: "Python", subTitle: "50+ Hours Experience" },
+  { title: "ReactJS", subTitle: "4 Years Experience" },
+  { title: "NodeJS", subTitle: "3 Years Experience" },
+  { title: "NextJS", subTitle: "1 Years Experience" },
 ];
 
 export const projectsCardsMock = [

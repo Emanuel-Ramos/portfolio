@@ -10,13 +10,13 @@ import classNames from "classnames";
 
 const ThemeSelector = () => {
   const [darkTheme, setDarkTheme] = useState(true);
-  const handleChangeTheme = (theme: string) => {
+  const HandleChangeTheme = (theme: string) => {
     setDarkTheme(!darkTheme);
     useThemes(theme);
   };
   return (
     <button
-      onClick={() => handleChangeTheme(darkTheme ? "light" : "dark")}
+      onClick={() => HandleChangeTheme(darkTheme ? "light" : "dark")}
       className={classNames("header-theme-toggle")}
     >
       <Image

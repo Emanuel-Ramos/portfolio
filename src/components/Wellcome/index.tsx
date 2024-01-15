@@ -29,13 +29,14 @@ const Wellcome = () => {
       <section className={classNames("container", "wellcome")}>
         <div className={classNames("wellcome-text")}>
           <h1 className={classNames("wellcome-text-title")}>
-            Nice to meet you! I’m <span>Emanuel Ramos</span>
+            Nice to meet you! I&apos;m <span>Emanuel Ramos</span>
           </h1>
           <p className={classNames("wellcome-text-subtitle")}>
-            With extensive programming experience since age 9, I've cultivated a
-            fervent passion for machine learning. Committed to continuous
-            learning, I aspire to leverage my competencies in this field to
-            eventually build my career.
+            Hi, how are you? I&apos;m a tech lead and full stack developer, more
+            passionate about the front end. I have studied programming for 6
+            years and have been working in the area for 3 years. Below this page
+            there is more information about the technologies and projects I have
+            worked on. Welcome!
           </p>
           <ContactMe />
         </div>

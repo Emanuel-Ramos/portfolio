@@ -5,14 +5,10 @@ import classNames from "classnames";
 import Image from "next/image";
 import { IProjectCard } from "@/typings/projectCard";
 import Link from "next/link";
-import Head from "next/head";
 
 const ProjectCard = ({ img, title, tecnologies, link }: IProjectCard) => {
   return (
     <li className={classNames("projects-list-card")}>
-      <Head>
-        <script type="text/javascript" src="/teste"></script>
-      </Head>
       <Link href={link} className={classNames("projects-list-card-link")}>
         <Image
           className={classNames("projects-list-card-img")}
