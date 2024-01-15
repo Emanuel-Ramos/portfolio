@@ -12,9 +12,15 @@ import ThemeSelector from "./ThemeSelector";
 import useScrollDirection from "@/hooks/useScrollDirection";
 
 const Header = () => {
-  const scrollDirection = useScrollDirection();
+  // const scrollDirection = useScrollDirection();
   return (
-    <header className={classNames("container", "header", scrollDirection)}>
+    <header
+      className={classNames(
+        "container",
+        "header"
+        // scrollDirection
+      )}
+    >
       <h2 className={classNames("header-title")}>emanuelramos</h2>
       <div>
         <ul className={classNames("header-socials")}>

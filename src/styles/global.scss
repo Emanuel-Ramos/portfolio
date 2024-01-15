@@ -7,4 +7,10 @@ body {
 .container {
   max-width: $section-container;
   margin: 0 auto;
+  @media (max-width: $bp-tablet) {
+    max-width: $section-container-tablet;
+  }
+  @media (max-width: $bp-phone-mid) {
+    max-width: $section-container-phone;
+  }
 }

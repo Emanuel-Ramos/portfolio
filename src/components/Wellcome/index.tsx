@@ -56,7 +56,11 @@ const Wellcome = () => {
             height={129}
             zIndex={2}
           />
-          <Image src={wellcomeImage} alt="Profile image" />
+          <Image
+            className={classNames("wellcome-image-profile")}
+            src={wellcomeImage}
+            alt="Profile image"
+          />
         </div>
       </section>
     </>

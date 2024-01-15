@@ -3,7 +3,10 @@
   flex-direction: row;
   justify-content: space-between;
   padding: $section-margin 0;
-
+  @media (max-width: $bp-tablet) {
+    flex-direction: column;
+    align-items: center;
+  }
   &-text {
     max-width: 445px;
     &-title {
@@ -16,6 +19,10 @@
       letter-spacing: -2.5px;
       margin: 0;
       padding-bottom: $text-padding;
+      @media (max-width: $bp-tablet) {
+        text-align: center;
+        padding-bottom: $text-padding-tablet;
+      }
     }
     &-subtitle {
       color: var(--text-color);
@@ -25,6 +32,10 @@
       font-weight: 500;
       line-height: 28px;
       margin: 0;
+      @media (max-width: $bp-tablet) {
+        text-align: center;
+        padding-bottom: $text-padding-tablet;
+      }
     }
   }
   &-form {
@@ -36,7 +47,7 @@
     &-input-text,
     &-input {
       height: 43px;
-      width: 445px;
+      width: 413px;
 
       background-color: transparent;
       border: 0;
@@ -53,6 +64,9 @@
       margin: $form-input-margin 0;
 
       padding: 0 16px;
+      @media (max-width: $bp-phone-mid) {
+        width: 300px;
+      }
     }
     &-input-text {
       height: 107px;

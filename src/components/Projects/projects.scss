@@ -1,4 +1,8 @@
 .projects {
+  margin-bottom: $section-margin;
+  @media (max-width: $bp-tablet) {
+    margin-bottom: $section-margin-tablet;
+  }
   &-head {
     display: flex;
     align-items: center;
@@ -11,6 +15,12 @@
       letter-spacing: -2.5px;
 
       color: var(--text-color);
+      @media (max-width: $bp-tablet) {
+        font-size: 72px;
+      }
+      @media (max-width: $bp-phone-mid) {
+        font-size: 40px;
+      }
     }
   }
   &-list {
@@ -22,6 +32,12 @@
     list-style: none;
     &-card {
       padding-bottom: $text-padding;
+      &-img {
+        @media (max-width: $bp-tablet) {
+          max-width: 345px;
+          max-height: 253px;
+        }
+      }
       &-link {
         text-decoration: none;
       }

@@ -3,20 +3,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: absolute;
   background-color: transparent;
   width: 1110px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
   transition: all 0.2s ease-in-out;
-
-  &.down {
-    top: 0;
+  top: 0;
+  @media (max-width: $bp-phone-mid) {
+    flex-direction: column;
   }
-  &.up {
-    top: -100%;
-  }
+  // &.down {
+  //   @media (max-width: $bp-tablet) {
+  //     top: 35px;
+  //   }
+  // }
+  // &.up {
+  //   top: -100%;
+  // }
   &-title {
     height: auto;
     color: var(--text-color);
@@ -25,6 +30,9 @@
     font-weight: 700;
     line-height: 32px;
     letter-spacing: -0.444px;
+    @media (max-width: $bp-phone-mid) {
+      margin: 16px;
+    }
   }
   &-socials {
     display: flex;

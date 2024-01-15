@@ -4,18 +4,28 @@
   margin-bottom: $section-margin;
 
   padding-top: $text-padding;
+  @media (max-width: $bp-tablet) {
+    margin-bottom: $section-margin-tablet;
+    padding-top: $text-padding-tablet;
+  }
   &-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0;
     margin: 0;
+    @media (max-width: $bp-tablet) {
+      flex-direction: column;
+    }
     &-card {
       list-style: none;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      @media (max-width: $bp-tablet) {
+        margin-bottom: $section-margin-tablet;
+      }
       &-title {
         font-size: 48px;
         font-style: normal;
@@ -26,6 +36,9 @@
 
         margin: 0;
         margin-bottom: $card-text-margin;
+        @media (max-width: $bp-tablet) {
+          text-align: center;
+        }
       }
       &-subtitle {
         font-size: 18px;

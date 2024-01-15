@@ -1,3 +1,11 @@
+//BreakPoints
+
+$bp-phone: 320px;
+$bp-phone-mid: 425px;
+$bp-tablet: 768px;
+$bp-notebook: 1280px;
+$bp-desktop: 1440px;
+
 //Colors
 $primary-color: #bdff91;
 
@@ -9,9 +17,14 @@ $purple: #6c1bf0;
 //Widths
 
 $section-container: 1110px;
+$section-container-tablet: 706px;
+$section-container-phone: 343px;
+
 $section-margin: 64px;
+$section-margin-tablet: 48px;
 
 $text-padding: 48px;
+$text-padding-tablet: 24px;
 
 $card-text-margin: 14px;
 
