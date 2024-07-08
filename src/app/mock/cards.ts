@@ -6,8 +6,8 @@ import Exito from "@/assets/imgs/Screenshot_4.png";
 
 export const skillsCardsMock = [
   { title: "ReactJS", subTitle: "4 Years Experience" },
-  { title: "NodeJS", subTitle: "3 Years Experience" },
-  { title: "NextJS", subTitle: "1 Years Experience" },
+  { title: "NodeJS", subTitle: "4 Years Experience" },
+  { title: "NextJS", subTitle: "2 Years Experience" },
 ];
 
 export const projectsCardsMock = [
