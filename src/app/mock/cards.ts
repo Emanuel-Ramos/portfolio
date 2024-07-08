@@ -1,5 +1,5 @@
 // import ProjectDefault from "@/assets/imgs/default-project.jpg";
-import Larebaja from "@/assets/imgs/Screenshot_1.png";
+import SudaDental from "@/assets/imgs/Screenshot_5.png";
 import Trocafy from "@/assets/imgs/Screenshot_2.png";
 import Constance from "@/assets/imgs/Screenshot_3.png";
 import Exito from "@/assets/imgs/Screenshot_4.png";
@@ -18,15 +18,15 @@ export const projectsCardsMock = [
     link: "https://www.exito.com/",
   },
   {
-    img: Larebaja,
-    title: "Larebaja",
+    img: SudaDental,
+    title: "Suda Dental",
     tecnologies: ["ReactJS", "NodeJS"],
-    link: "https://www.larebajavirtual.com/",
+    link: "https://www.sudadental.com.br/",
   },
   {
     img: Constance,
     title: "Constance",
-    tecnologies: ["ReactJS"],
+    tecnologies: ["ReactJS", "NodeJS"],
     link: "https://www.constance.com.br/",
   },
   {
