@@ -13,8 +13,8 @@ import classNames from "classnames";
 const space = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Emanuel Portifolio`s",
-  description: "My personal portifolio",
+  title: "Emanuel Portfolio`s",
+  description: "My personal portfolio",
 };
 const cx = classNames.bind(space);
 export default function RootLayout({
