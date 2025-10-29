@@ -10,13 +10,14 @@ const ProjectCard = ({ img, title, tecnologies, link }: IProjectCard) => {
   return (
     <li className={classNames("projects-list-card")}>
       <Link href={link} className={classNames("projects-list-card-link")}>
-        <Image
-          className={classNames("projects-list-card-img")}
-          src={img}
-          alt={"Project Card image"}
-          width={545}
-          height={400}
-        />
+        <div className={classNames("projects-list-card-img-wrapper")}>
+          <Image
+            className={classNames("projects-list-card-img")}
+            src={img}
+            alt={"Project Card image"}
+          />
+        </div>
+
         <h3 className={classNames("projects-list-card-title")}>{title}</h3>
         <ul className={classNames("projects-list-card-tecnologies")}>
           {tecnologies.map((tecnology) => {

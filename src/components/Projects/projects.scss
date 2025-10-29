@@ -32,10 +32,32 @@
     list-style: none;
     &-card {
       padding-bottom: $text-padding;
+
+      width: 25%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
       &-img {
+        max-width: 135px;
+        filter: grayscale(1);
         @media (max-width: $bp-tablet) {
-          max-width: 345px;
-          max-height: 253px;
+          object-fit: contain;
+        }
+        &-wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 160px;
+          height: 160px;
+          background: #fff;
+          border-radius: 16px;
+          padding: 4px;
+          &:hover {
+            .projects-list-card-img {
+              transform: scale(1.2);
+              transition: transform 300ms ease-in-out;
+            }
+          }
         }
       }
       &-link {
