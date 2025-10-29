@@ -34,7 +34,7 @@ const Wellcome = () => {
           <p className={classNames("wellcome-text-subtitle")}>
             Hi, how are you? I&apos;m a tech lead and full stack developer, more
             passionate about the front end. I have studied programming for 6
-            years and have been working in the area for 3 years. Below this page
+            years and have been working in the area for 5 years. Below this page
             there is more information about the technologies and projects I have
             worked on. Welcome!
           </p>
