@@ -23,21 +23,69 @@
       }
     }
   }
+  &-slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 5%,
+      black 5%,
+      transparent
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 10%,
+      black 95%,
+      transparent
+    );
+  }
+
   &-list {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: nowrap;
     list-style: none;
+    gap: 32px;
+
+    &-slider {
+      animation: slide-infinite 40s linear infinite;
+      width: fit-content;
+      will-change: transform;
+
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+
+    @keyframes slide-infinite {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-50% - 16px));
+      }
+    }
+
     &-card {
-      padding-bottom: $text-padding;
+      flex-shrink: 0;
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
 
       @media (min-width: $bp-tablet) {
-        width: 25%;
-        justify-content: center;
-        align-items: center;
-        display: flex;
+        width: 220px;
+      }
+      @media (min-width: $bp-notebook) {
+        width: 250px;
+      }
+      @media (max-width: $bp-phone-mid) {
+        width: 180px;
       }
       &-img {
         max-width: 135px;

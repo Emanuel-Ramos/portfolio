@@ -10,6 +10,9 @@ import Circles from "@/assets/svgs/Circles.svg";
 import { EnumAnimation } from "@/typings/floatingImgs";
 
 const Projects = () => {
+  // Duplicar os cards para criar o efeito infinito
+  const duplicatedCards = [...projectsCardsMock, ...projectsCardsMock];
+
   return (
     <>
       {/* <FloatingImgs
@@ -27,19 +30,21 @@ const Projects = () => {
           <ContactMe />
         </div>
 
-        <ul className={classNames("projects-list")}>
-          {projectsCardsMock.map((card) => {
-            return (
-              <ProjectCard
-                img={card.img}
-                title={card.title}
-                tecnologies={card.tecnologies}
-                link={card.link}
-                key={card.title}
-              />
-            );
-          })}
-        </ul>
+        <div className={classNames("projects-slider-wrapper")}>
+          <ul className={classNames("projects-list", "projects-list-slider")}>
+            {duplicatedCards.map((card, index) => {
+              return (
+                <ProjectCard
+                  img={card.img}
+                  title={card.title}
+                  tecnologies={card.tecnologies}
+                  link={card.link}
+                  key={`${card.title}-${index}`}
+                />
+              );
+            })}
+          </ul>
+        </div>
       </section>
     </>
   );
