@@ -9,9 +9,9 @@ import Larebaja from "@/assets/svgs/logo-larebaja.svg";
 import Klabin from "@/assets/svgs/klabin-logo.svg";
 
 export const skillsCardsMock = [
-  { title: "ReactJS", subTitle: "4 Years Experience" },
-  { title: "NodeJS", subTitle: "4 Years Experience" },
-  { title: "NextJS", subTitle: "2 Years Experience" },
+  { title: "ReactJS", subTitle: "5 Years Experience" },
+  { title: "NodeJS", subTitle: "5 Years Experience" },
+  { title: "NextJS", subTitle: "3 Years Experience" },
 ];
 
 export const projectsCardsMock = [

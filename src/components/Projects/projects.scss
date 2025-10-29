@@ -33,16 +33,17 @@
     &-card {
       padding-bottom: $text-padding;
 
-      width: 25%;
-      justify-content: center;
-      align-items: center;
-      display: flex;
+      @media (min-width: $bp-tablet) {
+        width: 25%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
       &-img {
         max-width: 135px;
         filter: grayscale(1);
-        @media (max-width: $bp-tablet) {
-          object-fit: contain;
-        }
+        object-fit: contain;
+
         &-wrapper {
           display: flex;
           justify-content: center;
@@ -52,6 +53,7 @@
           background: #fff;
           border-radius: 16px;
           padding: 4px;
+          box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
           &:hover {
             .projects-list-card-img {
               transform: scale(1.2);

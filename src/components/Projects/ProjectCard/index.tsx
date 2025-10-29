@@ -9,7 +9,11 @@ import Link from "next/link";
 const ProjectCard = ({ img, title, tecnologies, link }: IProjectCard) => {
   return (
     <li className={classNames("projects-list-card")}>
-      <Link href={link} className={classNames("projects-list-card-link")}>
+      <Link
+        href={link}
+        className={classNames("projects-list-card-link")}
+        target="_blank"
+      >
         <div className={classNames("projects-list-card-img-wrapper")}>
           <Image
             className={classNames("projects-list-card-img")}

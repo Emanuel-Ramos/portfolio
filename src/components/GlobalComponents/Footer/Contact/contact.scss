@@ -24,6 +24,7 @@
         padding-bottom: $text-padding-tablet;
       }
     }
+    &-email,
     &-subtitle {
       color: var(--text-color);
 
@@ -36,6 +37,10 @@
         text-align: center;
         padding-bottom: $text-padding-tablet;
       }
+    }
+    &-email {
+      margin-top: $text-padding / 2;
+      font-weight: 700;
     }
   }
   &-form {
